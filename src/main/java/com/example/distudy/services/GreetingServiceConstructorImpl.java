@@ -3,9 +3,9 @@ package com.example.distudy.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class GreetingServiceConstructorImpl implements GreetingService{
     @Override
     public String hello() {
-        return "Hello!";
+        return "Hello form Constructor!";
     }
 }
