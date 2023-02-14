@@ -15,7 +15,7 @@ class PropertyInjectControllerTest {
     }
 
     @Test
-    void getGreating() {
+    void getGreeting() {
         System.out.println(propertyInjectController.getGreating());
     }
 }

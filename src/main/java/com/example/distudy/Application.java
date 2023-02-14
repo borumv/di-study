@@ -1,9 +1,6 @@
 package com.example.distudy;
 
-import com.example.distudy.controllers.ConstructorInjectController;
-import com.example.distudy.controllers.MyController;
-import com.example.distudy.controllers.PropertyInjectController;
-import com.example.distudy.controllers.SetterInjectController;
+import com.example.distudy.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -27,6 +24,10 @@ public class Application {
 		ConstructorInjectController constructorInjectController = (ConstructorInjectController) ap.getBean("constructorInjectController");
 		System.out.println("----Constructor Inject");
 		System.out.println(propertyInjectController.getGreating());
+
+		PrimaryController controller = (PrimaryController) ap.getBean("primaryController");
+		System.out.println("----Primary controller");
+		System.out.println(controller.getGreating());
 	}
 
 }

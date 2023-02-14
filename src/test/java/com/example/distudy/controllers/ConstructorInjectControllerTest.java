@@ -14,7 +14,7 @@ class ConstructorInjectControllerTest {
     }
 
     @Test
-    void getGreating() {
+    void getGreeting() {
         System.out.println(controller.getGreating());
     }
 }
