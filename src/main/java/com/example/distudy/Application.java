@@ -28,6 +28,10 @@ public class Application {
 		PrimaryController controller = (PrimaryController) ap.getBean("primaryController");
 		System.out.println("----Primary controller");
 		System.out.println(controller.getGreating());
+
+		InternalizationController internalisationController = (InternalizationController) ap.getBean("internalizationController");
+		System.out.println("----Primary controller");
+		System.out.println(internalisationController.getGreating());
 	}
 
 }
